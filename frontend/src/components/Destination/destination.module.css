@@ -1,0 +1,228 @@
+/* destination.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+.destination-body {
+    background-size: 1000vw 1000vh;
+    top: 5%;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.destination-upperbody {
+    background-image: url('../../images/mountain celebration.jpeg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 897px;
+    background-color: rgba(118, 117, 117, 0.8);
+    background-blend-mode: multiply;
+    width: 100%;
+}
+
+.destination-cote {
+    margin-top: 20%;
+    color: #FFF;
+    text-align: center;
+    font-size: 80px;
+    font-style: normal;
+    width: 1100px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.destination-detailssearch {
+    margin-left: 10%;
+}
+
+.destination-search-bar {
+    margin-top: 5%;
+    width: 350px;
+    position: relative;
+}
+
+.destination-search-bar input {
+    width: 180%;
+    height: 50px;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 33px;
+}
+
+.destination-search-icon {
+    position: absolute;
+    top: 50%;
+    left: 570px; /* Use 'left' instead of 'margin-left' */
+    border-radius: 25px;
+    font-size: 20px; /* Increase the icon size as desired */
+    color:  #4169E1;
+    /* Set the color to blue */
+    transform: translateY(-50%);
+}
+
+.destination-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 50%;
+    margin: 10px; /* Add negative margin to counteract margin of content boxes */
+}
+
+.destination-content {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 30%; /* Adjust width and margin to control spacing */
+    margin: 10px;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.destination-content-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.destination-image {
+    width: 100%; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover;
+    padding: 2px;
+    border-radius: 30px;
+}
+
+.destination-content h1 {
+    font-size: 24px;
+}
+
+.destination-pictures {
+    width: 270%;
+    height: 500px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+.pagination {
+    margin-top: 20px; /* Adjust the spacing from the content as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40vw;
+  }
+  
+  /* Styles for pagination buttons */
+.pagination button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    height: 3vh;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+.pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for disabled pagination buttons */
+.pagination button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+.destination-detailselect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 50vw;
+    margin-left: 5vw;
+  }
+.destination-select-bar {
+    /* align-items: center;
+    background-color: white;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    width: 15vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 1.1vw;
+    padding-left: 2.5vw;
+    border-radius: 50px;
+    color: #4169E1;
+    outline: none;
+    border: 0.5px solid #4169E1;
+    cursor: pointer; */
+    margin-top: 0.5vw;
+    transition: background-color 0.3s;
+  }
+  
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+select {
+    align-items: center;
+    background-color: white;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    width: 20vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 1vw;
+    padding-left: 1.5vw;
+    border-radius: 50px;
+    padding-right: 10vw;
+    color: black;
+    outline: none;
+    border: 0.5px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+@media (max-width: 780px) {
+   
+    .destination-body {
+        background-attachment: fixed;
+        background-color: white;
+    }
+    .destination-upperbody {
+        background-image: url('../../images/mountain celebration.jpeg');
+        background-size: cover; /* Ensure the image covers the entire container */
+        width: 100vw;
+        height: 50vh; /* Adjust the height as needed for smaller screens */
+      }
+    .destination-row {
+        margin: 5px; /* Adjust margin for smaller screens */
+        background-attachment: fixed;
+        object-fit: cover;
+        width: 100%;
+    }
+    .destination-content {
+        width: 100%; /* Full width on mobile */
+        margin: 5px;
+        padding: 5px;
+    }
+    .destination-image {
+        width: 100%;
+        height: 250px; /* Adjust the height as needed for smaller screens */
+    }
+    .destination-pictures {
+        width: 300%;
+        height: 300px;
+        object-fit: cover;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+   
+}

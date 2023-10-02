@@ -1,0 +1,82 @@
+/* create-blog.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+.create-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.create-title {
+    text-align: center;
+    font-size: 3vw; /* Font size as 3% of viewport width */
+    margin-top: 2vh; /* Margin top as 2% of viewport height */
+    margin-bottom: 2vh; /* Margin bottom as 2% of viewport height */
+}
+
+.create-form {
+    max-width: 80vw;
+    width: 100vw; /* Width as 100% of viewport width */
+    background-color: #fff;
+    border: 0.1vw solid #ccc; /* Border as 0.1% of viewport width */
+    border-radius: 1vw; /* Border radius as 1% of viewport width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2vh; /* Padding as 2% of viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+.create-form-group {
+    width: 20vw;
+    margin-bottom: 2vh; /* Margin bottom as 2% of viewport height */
+}
+
+.create-form label {
+    font-weight: bold;
+    margin-bottom: 1vh; /* Margin bottom as 1% of viewport height */
+}
+
+.create-form input[type="text"],
+.create-form textarea,
+.create-form select,
+.create-form input[type="file"] {
+    width: 100%;
+    padding: 1.5vh; /* Padding as 1.5% of viewport height */
+    font-size: 1.5vw; /* Font size as 1.5% of viewport width */
+    border: 0.1vw solid #ccc; /* Border as 0.1% of viewport width */
+    border-radius: 1vw; /* Border radius as 1% of viewport width */
+    outline: none;
+}
+
+.create-form select {
+    background-color: #fff;
+}
+
+.create-button {
+    width: 100%;
+    padding: 1.5vh; /* Padding as 1.5% of viewport height */
+    font-size: 1.5vw; /* Font size as 1.5% of viewport width */
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 1vw; /* Border radius as 1% of viewport width */
+    cursor: pointer;
+    margin-top: 2vh; /* Margin top as 2% of viewport height */
+    transition: background-color 0.2s;
+}
+
+.create-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .create-form {
+        max-width: 100%;
+    }
+}

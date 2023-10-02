@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    color: #333;
+    background-color: transparent;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    max-height: 20vh; /* Add max-height to contain the elements within the header */
+    overflow: hidden; /* Hide overflow content */
+    padding: 2vw 18vw;
+}
+
+/* Centered navigation items */
+.centered {
+  
+   
+    font-size: 22px;
+    font-weight: 800;
+}
+.nav-container-previous{
+    margin-left: 20000vw;
+}
+/* Centered navigation items */
+.nav-container-previous,
+.nav-container-next {
+    margin-top: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0; /* Reset margin for list items */
+    padding: 0; /* Reset padding for list items */
+}
+
+
+/* .centered {
+    margin-top: 5%;
+    margin-left: 500px;
+    font-size: 22px;
+    font-weight: 800;
+} */
+
+.centered li {
+    margin-left: 72px; /* Adjust spacing between items */
+}
+
+.centered li:last-child {
+    margin-right: 0;
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: width 0.3s;
+    margin-right: 20px; /* Adjust spacing between search and Signup */
+}
+
+.search-bar.expanded {
+    width: 20vh; /* Adjust the width as needed */
+}
+
+.search-bar input {
+    width: 0;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-bottom: 0.2vh;
+    margin-right: 2vh ;
+    transition: width 0.3s;
+}
+
+.search-bar.expanded input {
+    width: 130%; /* Adjust to fill the container */
+    font-size: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+/* Search icon styling */
+.search-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Signup and Login styling */
+.Signup,
+.Login {
+    margin-left: 8vh;
+    font-size: 24px;
+    font-weight: 800;
+    margin-right: 20px;
+}
+
+.right-aligned {
+    
+    margin-left: 18vw;
+    margin-right: 1vh; /* Adjust spacing between Signup and Login */
+}
+
+/* Login button styling */
+.Login-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 2.8vh;
+    width: 8vw;
+    font-size: 1vw;
+    font-weight: bold; /* Use "bold" instead of a percentage */
+    line-height: normal;
+    cursor: pointer;
+}
+.profile-content {
+   
+    display: flex; /* Display its children in a row */
+    align-items: center; /* Vertically align the children */
+  }
+  .profile-content-name{
+    margin-left: 8vh;
+    font-size: 24px;
+    font-weight: 800;
+    margin-right: 20px;
+
+  }
+  .profile-image {
+    margin-left: 3vw;
+    width: 6vw;
+    height: 6vw; /* Make the image square */
+    border-radius: 50%;
+  }
+
+/* Media query for smaller screens */
+@media (max-width: 1080px) {
+    .nav-container-previous,
+    .nav-container-next {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .Signup,
+    .Login {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

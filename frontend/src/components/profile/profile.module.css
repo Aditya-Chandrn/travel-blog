@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+/* Global styles */
+body {
+    font-family: 'Urbanist', sans-serif;
+    color: #333;
+}
+.profile-image {
+    flex-basis: 40%;
+}
+/* CSS for the main profile-links-container */
+.profile-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* CSS for the Create Blogs container */
+  .profile-links-container-create {
+    align-items: center;
+    background-color: white;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    width: 15vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 1.1vw;
+    padding-left: 2.5vw;
+    border-radius: 50px;
+    color: #4169E1;
+    outline: none;
+    border: 0.5px solid #4169E1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+ 
+  /* CSS for the My Blogs container */
+  .profile-links-container-my-blog {
+    align-items: center;
+    background-color: white;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    padding-left: 2.5vw;
+    width: 11vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 1.1vw;
+    border-radius: 50px;
+    color: #4169E1;
+    outline: none;
+    border: 0.5px solid #4169E1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* CSS for the profile-link elements (inside both containers) */
+  .profile-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .profile-link:hover {
+    color: #007bff;
+  }
+  
+  /* CSS for the profile-link elements */
+  .profile-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .profile-link:hover {
+    color: #007bff;
+  }
+  .profile-create-blog{
+    font-size: 2vw;
+
+  }
+
+/* Container styles */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+}
+
+/* Image styles */
+.profile-image-content {
+    width: 30vw;
+    height: 50vh;
+    border-radius: 50%; 
+}
+.profile-image-form {
+    flex-basis: 48%;
+}
+
+/* Form styles */
+.profile-content {
+    width: 50vw;
+    padding: 10% 5%;
+    align-items: center;
+}
+
+/* Button styles */
+.profile-button, .profile-loginbutton {
+    align-items: center;
+    background-color: white;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    width: 470px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 1.1vw;
+    border-radius: 50px;
+    color: #4169E1;
+    outline: none;
+    border: 0.5px solid #4169E1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile-button:hover, .profile-loginbutton:hover {
+    background-color: #4169E1;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Google button styles */
+.profile-google {
+    display: inline-block;
+    width: 60%;
+    height: 8vh;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.profile-google-icon {
+    display: inline-block;
+    margin-top: 0.5vw;
+}
+
+.profile-google-text {
+    align-items: center;
+    margin-top: 0.5vw;
+    padding: 0.7vw;
+    width: 60%;
+    font-weight: 500;
+    font-size: 1.5vw;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+/* Label and input styles */
+.profile-label {
+    font-size: 1.2vw;
+    color: var(--light-black);
+}
+
+.profile-input {
+    font-size: 1.8vw;
+    height: 5vh;
+    width: 70%;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 1px solid #686666;
+    outline: none;
+}
+
+/* Headings styles */
+h3 {
+    display: inline;
+}
+
+/* Custom Font style */
+.profile-font {
+    font-family: 'Urbanist', sans-serif;
+    color: blue;
+}
+
+h6 {
+    font-size: 120%;
+}
+
+h5 {
+    float: right;
+    padding-right: 30%;
+    font-size: medium;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1080px) {
+    .profile-container {
+        margin-left: 2.5vw;
+        padding: 0;
+    }
+
+    .profile-image-content {
+        width: 100vw;
+        border-radius: 50%;
+    }
+    .profile-create-blog{
+        
+        padding-top: 20vw;
+        font-size: 4.5vw;
+    }
+    .profile-links-container-create{
+        margin-left: 10vw;
+        width: 28vw; /* Make both containers full-width on smaller screens */
+        font-size: auto; /* Adjust font size as needed for smaller screens */
+        margin-top: 10vh;
+    }
+    .profile-links-container-my-blog {
+        margin-right: 20vw;
+        width: 23vw; /* Make both containers full-width on smaller screens */
+        font-size: auto; /* Adjust font size as needed for smaller screens */
+        margin-top: 10vh; /* Add margin-top back if needed */
+    }
+
+
+    .profile-form {
+        flex-basis: 100%;
+    }
+
+    .profile-input {
+        font-size: 25px;
+        width: 100vw;
+    }
+
+    .profile-label {
+        font-size: 24px;
+    }
+
+    .profile-google {
+        width: 105%;
+    }
+
+    .profile-content {
+        align-items: center;
+        text-align: left;
+    }
+
+    .profile-button, .profile-loginbutton {
+        margin-top: 20px;
+        width: 90vw;
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h5 {
+        float: right;
+        font-size: small;
+        text-align: right;
+    }
+}

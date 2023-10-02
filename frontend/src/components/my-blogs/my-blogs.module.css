@@ -1,0 +1,87 @@
+/* my-blog.module.css */
+.myblog-body {
+    background-size: 1000vw 1000vh;
+    background-repeat: no-repeat;
+    top: 60%;
+    margin-top: 500px; /* Adjust the margin-top to create space between header and content */
+    padding-top: 120px;
+    }
+    
+    .my-blog-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 220px;
+      margin: 10px; /* Add negative margin to counteract margin of content boxes */
+    }
+    
+    .my-blog-content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      width: 30%; /* Adjust width and margin to control spacing */
+      margin: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .my-blog-content-link {
+     
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .my-blog-image {
+    width: 100%; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    object-fit: cover;
+    padding: 2px;
+    border-radius: 4vw;
+   
+    }
+    
+    .my-blog-content h1 {
+      font-size: 24px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .Login{
+      margin-left: 75vw;
+      font-size: 24px;
+      font-weight: 800;
+      margin-right: 20px;
+     
+    }
+    .Login-button{
+      background-color: orange;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 28px;
+      width: 120px;
+      font-size: 18px;
+      font-weight: bold; /* Use "bold" instead of a percentage */
+      line-height: normal;
+      cursor: pointer;
+    }
+  @media (max-width: 780px) {
+    .my-blog-row {
+        margin: 5px; /* Adjust margin for smaller screens */
+    }
+  
+    .my-blog-content {
+        width: 100%; /* Full width on mobile */
+        margin: 7px;
+        padding: 5px;
+  
+    }
+  
+    .my-blog-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover; /* Adjust the height as needed for smaller screens */
+    }
+  }

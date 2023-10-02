@@ -1,0 +1,322 @@
+/* stories.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+.stories-body {
+    background-size: 1000vw 1000vh;
+    top: 5%;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.stories-upperbody {
+    flex-shrink: 0;
+    object-fit: cover;
+    overflow: hidden;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+   
+    background-color: rgba(118, 117, 117, 0.8);
+    background-blend-mode: multiply;
+    width: 100vw; /* Adjust this width as needed */
+    height: 100vh;
+    animation: scrollImages 40s infinite linear; /* Adjust the animation duration as needed */
+}
+
+/* @keyframes displayImages {
+    0% {
+        background-position: 0 0;
+        background-image: 
+        url('../../images/Matheran.jpeg');
+        
+    }
+    33.33% {
+        background-image: url('../../images/travel.jpg');
+       
+    }
+    66.66% {
+        background-image: url('../../images/sunsetimage.jpg');
+       
+    }
+    100% {
+        background-image: url('../../images/Victoria-falls\ \(2\).jpg');
+        
+    }
+} */
+@keyframes scrollImages {
+    0% {
+        background-position-x: 0%;
+        background-image: 
+        url('../../images/Matheran.jpeg');
+    }
+    35% {
+        background-position-x: 100%;
+        background-image: url('../../images/travel.jpg');
+       
+    }
+    75% {
+        background-position-x: 300%;
+        background-image: url('../../images/sunsetimage.jpg');
+    }
+    95% {
+        background-position-x: 600%;
+        background-image: url('../../images/Victoria-falls\ \(2\).jpg');
+    }
+    135% {
+        background-position-x: 0%;
+        background-image: url('../../images/bora-bora-island.jpg');
+    }
+}
+.stories-cote {
+    margin-top: 20%;
+    color: #FFF;
+    text-align: center;
+    font-size: 80px;
+    font-style: normal;
+    width: 1100px;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.stories-detailssearch {
+    margin-left: 10%;
+}
+
+.stories-search-bar {
+    margin-top: 5%;
+    width: 350px;
+    position: relative;
+}
+
+.stories-search-bar input {
+    width: 180%;
+    height: 50px;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    padding-left: 33px;
+}
+
+.stories-search-icon {
+    position: absolute;
+    top: 50%;
+    left: 570px; /* Use 'left' instead of 'margin-left' */
+    border-radius: 25px;
+    font-size: 20px; /* Increase the icon size as desired */
+    color:  #4169E1;
+    /* Set the color to blue */
+    transform: translateY(-50%);
+}
+
+.stories-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 50%;
+    margin: 10px; /* Add negative margin to counteract margin of content boxes */
+}
+
+.stories-content {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw; /* Adjust width and margin to control spacing */
+    margin:2vw;
+    background-color: transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+   
+}
+
+.stories-content-link {
+    text-decoration: none;
+    color: inherit;
+}
+.stories-storyheading{
+    margin-top: 15vh;
+    margin-left: 10vh;
+    font-size: 4vh;
+}
+.stories-storysubheading{
+
+    margin-left: 10vh;
+    font-size: 3vh;
+}
+.stories-image {
+    flex-shrink: 0;
+    width: 35vw; /* Set a fixed width */
+    height: 50vh; /* Set a fixed height */
+    object-fit: cover;
+    overflow: hidden;
+    padding: 2px;
+    border-radius: 3vh;
+}
+
+.stories-content h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    margin-left: 1vw;
+    font-size: 24px;
+    
+}
+.stories-content h6 {
+    justify-content: space-between;
+    margin-left: 1vw;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 2.3vh;
+    margin-top: 3vh;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.stories-pictures {
+    width: 270%;
+    height: 500px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+}
+.stories-details {
+  
+    display: inline-block;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+    font-family: 'Urbanist', sans-serif;
+  }
+  
+  .stories-place {
+ /* Adjust the left margin as needed */
+  /* Add padding to create space between the date and the separator */
+  /* Add a left border to act as a separator */
+  font-family: 'Urbanist', sans-serif;
+  }
+  
+   .stories-date  { 
+  padding-left: 23vw; /* Add padding to create space between the date and the separator */
+  /* Add a left border to act as a separator */
+  font-family: 'Urbanist', sans-serif;
+  }
+.pagination {
+    margin-top: 20px; /* Adjust the spacing from the content as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styles for pagination buttons */
+  .pagination button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    height: 3vh;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styles for disabled pagination buttons */
+  .pagination button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  .stories-detailselect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 50vw;
+    margin-left: 5vw;
+  }
+  .stories-select-bar {
+    /* align-items: center;
+    background-color: white;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    width: 15vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 1.1vw;
+    padding-left: 2.5vw;
+    border-radius: 50px;
+    color: #4169E1;
+    outline: none;
+    border: 0.5px solid #4169E1;
+    cursor: pointer; */
+    margin-top: 0.5vw;
+    transition: background-color 0.3s;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  select {
+    align-items: center;
+    background-color: white;
+    margin-top: 1vw;
+    padding: 0.5vw;
+    width: 20vw;
+    height: 5vh;
+    font-weight: 500;
+    font-size: 1vw;
+    padding-left: 1.5vw;
+    border-radius: 50px;
+    padding-right: 10vw;
+    color: black;
+    outline: none;
+    border: 0.5px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+@media (max-width: 780px) {
+   
+    .stories-body {
+        background-attachment: fixed;
+        background-color: white;
+    }
+    .stories-upperbody {
+        background-image: url('../../images/mountain celebration.jpeg');
+        background-size: cover; /* Ensure the image covers the entire container */
+        width: 100vw;
+        height: 50vh; /* Adjust the height as needed for smaller screens */
+      }
+    .stories-row {
+        margin: 5px; /* Adjust margin for smaller screens */
+        background-attachment: fixed;
+        object-fit: cover;
+        width: 100%;
+    }
+    .stories-content {
+        width: 100%; /* Full width on mobile */
+        margin: 5px;
+        padding: 5px;
+    }
+    .stories-image {
+        width: 100%;
+        height: 250px; /* Adjust the height as needed for smaller screens */
+    }
+    .stories-pictures {
+        width: 300%;
+        height: 300px;
+        object-fit: cover;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+   
+}
