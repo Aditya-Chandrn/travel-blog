@@ -1,0 +1,52 @@
+/* create-blog.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+.scaffold{
+    width: 100vw;
+    height: 100vh;
+}
+
+.formBox{
+    width: 60vw;
+    height: 70vh;
+    padding: 3vw;
+    margin: auto;
+    
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 5px 5px grey;
+    font-size: 2vw;
+}
+
+.box1{
+    width: 40vw;
+    height: 7vh;
+    border-radius: 10px;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    font-size: 2vw;
+}
+
+.box2{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    font-size: 2vw;
+}
+
+button{
+    border-radius: 10px;
+    width: 10vw;
+    height: 7vh;
+    font-size: 1.5vw;
+}
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .create-form {
+        max-width: 100%;
+    }
+}

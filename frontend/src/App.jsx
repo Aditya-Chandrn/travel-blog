@@ -8,7 +8,7 @@ import ResetpasswordForm from 'pages/forgotpassword/resetpassword';
 import Destination from 'pages/destination/destination';
 import Profile from 'pages/profile/profile';
 import MyBlogs from 'pages/my-blogs/my-blogs';
-import Create from 'pages/create-blog/create-blog';
+import Create from 'pages/create-blog/Create';
 import Stories from 'components/stories/stories';
 import Profileimg from 'pages/profileimg/profileimg';
 import Navbar from 'components/navbar/Navbar';
