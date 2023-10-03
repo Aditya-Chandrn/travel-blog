@@ -1,20 +1,38 @@
 /* create-blog.module.css */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
 
+
+
 .scaffold{
+    width: 100vw;
+    height: 100vh;
+    /* z-index: 10; */
+    background-image: url("../../images/bg-1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 3vh;
+}
+
+img{
     width: 100vw;
     height: 100vh;
 }
 
+h1{
+    margin: 0;
+    margin-bottom: 2vw;
+    color: white;
+}
+
 .formBox{
+    background-color: white;
     width: 60vw;
     height: 70vh;
     padding: 3vw;
     margin: auto;
-    
     border: 1px solid black;
     border-radius: 25px;
-    box-shadow: 5px 5px grey;
+    box-shadow: 2px 2px 30px grey;
     font-size: 2vw;
 }
 
