@@ -26,7 +26,7 @@ const SignupForm = () => {
       formData.append('email', email);
       formData.append('password', password);
       formData.append('confirmpassword', confirmpassword);
-      const response = await axios.post('http://localhost:3001/register', formData, {
+      const response = await axios.post('http://localhost:5000/register', formData, {
         headers: {
           'Content-Type': 'application/json',
         }

@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
-import SignupForm from './components/signup/Signup';
-import LoginForm from './components/login/Login';
-import ForgotpasswordForm from 'components/forgotpassword/forgotpassword';
-import ResetpasswordForm from 'components/forgotpassword/resetpassword';
-import Destination from 'components/Destination/destination';
-import Profile from 'components/profile/profile';
-import MyBlogs from 'components/my-blogs/my-blogs';
-import Create from 'components/create-blog/create-blog';
+import SignupForm from './pages/signup/Signup';
+import LoginForm from './pages/login/Login';
+import ForgotpasswordForm from 'pages/forgotpassword/forgotpassword';
+import ResetpasswordForm from 'pages/forgotpassword/resetpassword';
+import Destination from 'pages/destination/destination';
+import Profile from 'pages/profile/profile';
+import MyBlogs from 'pages/my-blogs/my-blogs';
+import Create from 'pages/create-blog/create-blog';
 import Stories from 'components/stories/stories';
-import Profileimg from 'components/profileimg/profileimg';
+import Profileimg from 'pages/profileimg/profileimg';
 import Navbar from 'components/navbar/Navbar';
 
 const App = () => {

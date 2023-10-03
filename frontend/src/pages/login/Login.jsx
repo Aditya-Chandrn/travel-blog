@@ -3,14 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import styles from './login.module.css';
-import borabora from '../../images/bora-bora-island.jpg';
 import googleicon from '../../images/google.png';
 import sunset from '../../images/sunsetimage.jpg';
 const LoginForm = () => {
  
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [errors, setErrors] = useState({});
+  const [err, setErrors] = useState({});
  
   const navigate = useNavigate();
   
@@ -54,8 +53,8 @@ const LoginForm = () => {
               alert('Authentication failed');
               console.log('Authentication failed');
             }
-          } catch (error) {
-            console.error('Error:', error);
+          } catch (err) {
+            console.error('Error:', err);
             alert('Error during authentication. Please try again later.');
           }
     }
@@ -75,7 +74,7 @@ const LoginForm = () => {
         <form>
         <div className={styles['login-google-main']}>
           <button type="submit" className={styles['login-google']} value="Submit">
-            <img className={styles['login-google-icon']} src={googleicon} height="25vw" />&nbsp;&nbsp;
+            <img className={styles['login-google-icon']} src={googleicon} height="25vw" alt= ''/>&nbsp;&nbsp;
             <span className={styles['google-text']}>Continue With Google</span>
           </button>
         </div>

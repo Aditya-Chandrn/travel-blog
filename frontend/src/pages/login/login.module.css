@@ -120,7 +120,7 @@ h5{
     padding-right: 30%;
     font-size: medium;
 }
-@media (max-width: 1080px) {
+@media (max-width: 800px) {
     body {
         font-family: 'Urbanist', sans-serif;
         color: #333; /* Change text color to a more readable one */
