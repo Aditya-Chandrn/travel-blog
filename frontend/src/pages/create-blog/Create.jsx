@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Create() {
-  const [placeName, setPlaceName] = useState("");
+  const [location, setLocation] = useState("");
   const [title, setTitle] = useState("");
-  const [review, setReview] = useState("");
+  const [content, setContent] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(true);
-  const [loggedInUserEmail, setLoggedInUserEmail] = useState("");
+  // const [loggedInUserEmail, setLoggedInUserEmail] = useState("");
 
 
 //   const [location, setLocation] = useState("");
@@ -17,33 +17,37 @@ export default function Create() {
 //   const [selectedDate, setSelectedDate] = useState("");
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const storedIsLoggedIn = localStorage.getItem("isLoggedIn");
-    console.log(storedIsLoggedIn);
-    if (storedIsLoggedIn === "true") {
-      setIsLoggedIn(true);
-      const storedEmail = localStorage.getItem("loggedInUserEmail");
-      console.log(storedEmail);
-      if (storedEmail) {
-        setLoggedInUserEmail(storedEmail);
-      }
-    }
-  }, []);
+  // useEffect(() => {
+  //   const storedIsLoggedIn = localStorage.getItem("isLoggedIn");
+  //   console.log(storedIsLoggedIn);
+  //   if (storedIsLoggedIn === "true") {
+  //     setIsLoggedIn(true);
+  //     const storedEmail = localStorage.getItem("loggedInUserEmail");
+  //     console.log(storedEmail);
+  //     if (storedEmail) {
+  //       setLoggedInUserEmail(storedEmail);
+  //     }
+  //   }
+  // }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       const formData = new FormData();
+      formData.append("location", location);
+      formData.append("title", title);
+      formData.append("content", content);
 
     //   const profileImageUrl = localStorage.getItem("profileImageUrl");
     //   formData.append("profileImageUrl", profileImageUrl);
 
-      const response = await axios.post("/create", formData, {
+      const response = await axios.post("http://localhost:5000/api/blog/create", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
       });
+      console.log(formData);
 
       console.log("Response:", response.data);
 
@@ -72,7 +76,7 @@ export default function Create() {
         <h1>Share your experience with others!!</h1>
       </center>
       <div className={styles.formBox}>
-        <form action="Post" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           Title: <br />
           <input 
             type="text"
@@ -86,22 +90,22 @@ export default function Create() {
           Name of the Location: <br />
           <input
             type="text"
-            name="placeName"
-            id="placeName"
-            value={placeName}
-            onChange={(e) => setPlaceName(e.target.value)}
+            name="location"
+            id="location"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
             required
             className={styles.box1}
             />
           <br />
           Share your experience here: <br />
           <textarea
-            name="desc"
-            id="desc"
+            name="content"
+            id="content"
             cols="51"
             rows="4"
-            value={review}
-            onChange={(e) => setReview(e.target.value)}
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
             required
             className={styles.box2}
           ></textarea>

@@ -4,7 +4,9 @@ import ProfileModel from "../models/ProfileModel.js";
 const router = Router();
 
 router.post('/register', async (req, res) => {
+    console.log("here");   
     const { username, email, password, confirmPassword } = req.body;
+    console.log(password, confirmPassword);
     console.log(req.body)
     // Check if password and confirmPassword match
     if (password !== confirmPassword) {

@@ -1,5 +1,5 @@
 // module import
-import express, {json, static as staticImgPath} from "express";
+import express, {json, static as staticImgPath, urlencoded} from "express";
 import cors from "cors";
 import { config } from "dotenv";
 
@@ -11,16 +11,19 @@ ConnectDB();
 const app = express();
 
 app.use(json());
+app.use(urlencoded({extended: true}));
 app.use(cors());
 app.use(staticImgPath('public'));
 
-//imports
 
+//routing
 import AuthRouter from "./routes/authRouter.js";
 import ProfileRouter from "./routes/profileRouter.js";
+import BlogRouter from "./routes/blogRouter.js";
 
-app.use("/api",AuthRouter);
-app.use("/api",ProfileRouter);
+app.use("/api/account",AuthRouter);
+app.use("/api/profile",ProfileRouter);
+app.use("/api/blog", BlogRouter);
 
 config();
 

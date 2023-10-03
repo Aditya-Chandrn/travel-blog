@@ -10,7 +10,7 @@ const SignupForm = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [confirmpassword, setConfirmPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -21,12 +21,12 @@ const SignupForm = () => {
       console.log('username',username)
       console.log('email',email)
       console.log('password',password)
-      console.log('confirmpassword',confirmpassword)
+      console.log('confirmPassword',confirmPassword)
       formData.append('username', username);
       formData.append('email', email);
       formData.append('password', password);
-      formData.append('confirmpassword', confirmpassword);
-      const response = await axios.post('http://localhost:5000/register', formData, {
+      formData.append('confirmPassword', confirmPassword);
+      const response = await axios.post('http://localhost:5000/api/account/register', formData, {
         headers: {
           'Content-Type': 'application/json',
         }
@@ -122,14 +122,14 @@ const SignupForm = () => {
           </div>
           <div>
             <br />
-            <label htmlFor="confirmpassword" className={styles['signup-label']}>
+            <label htmlFor="confirmPassword" className={styles['signup-label']}>
               Confirm Password:
             </label><br></br>
             <input
               className={styles['signup-input']}
               type="password"
-              id="confirmpassword"
-              value={confirmpassword}
+              id="confirmPassword"
+              value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
             />

@@ -8,7 +8,7 @@ const router = Router();
 
 router.post('/profile', async (req, res) => {
     try {
-      const { username,     newemail,
+      const { username,newemail,
         newpassword,
         confirmnewpassword, } = req.body;
   

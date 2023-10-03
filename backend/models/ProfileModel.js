@@ -1,10 +1,19 @@
 import { Schema, model } from 'mongoose';
 
 const profileSchema = new Schema({
-  username: String,
-  email: String,
-  password: String,
-  confirmPassword: String,
+  username: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  password: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  image: {
+    type: String,
+  }
 });
 const ProfileModel = model('Profile', profileSchema);
 
