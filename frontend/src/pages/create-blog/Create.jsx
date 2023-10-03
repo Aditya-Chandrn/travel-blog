@@ -71,7 +71,8 @@ export default function Create() {
 
   return (
     isLoggedIn?(
-        <div className={styles.scaffold}>
+      <div className={styles.scaffold}>
+          {/* <img src={bgImg} alt="" /> */}
       <center>
         <h1>Share your experience with others!!</h1>
       </center>
